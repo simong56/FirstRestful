@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "L+30bPPyKI8=",
+  "dgSpecHash": "iMhOgqnIH/0=",
   "success": true,
   "projectFilePath": "/home/gabor/RiderProjects/FirstRestful/BlogApi/BlogApi.csproj",
   "expectedPackageFiles": [
@@ -115,28 +115,13 @@
   ],
   "logs": [
     {
-      "code": "NU1901",
+      "code": "NU1900",
       "level": "Warning",
-      "message": "Package 'NuGet.Packaging' 6.12.1 has a known low severity vulnerability, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg",
+      "message": "Error occurred while getting package vulnerability data: Permission denied (api.nuget.org:443)",
       "projectPath": "/home/gabor/RiderProjects/FirstRestful/BlogApi/BlogApi.csproj",
       "warningLevel": 1,
       "filePath": "/home/gabor/RiderProjects/FirstRestful/BlogApi/BlogApi.csproj",
-      "libraryId": "NuGet.Packaging",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    },
-    {
-      "code": "NU1901",
-      "level": "Warning",
-      "message": "Package 'NuGet.Protocol' 6.12.1 has a known low severity vulnerability, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg",
-      "projectPath": "/home/gabor/RiderProjects/FirstRestful/BlogApi/BlogApi.csproj",
-      "warningLevel": 1,
-      "filePath": "/home/gabor/RiderProjects/FirstRestful/BlogApi/BlogApi.csproj",
-      "libraryId": "NuGet.Protocol",
-      "targetGraphs": [
-        "net10.0"
-      ]
+      "targetGraphs": []
     }
   ]
 }
