@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 24, 2026 at 10:01 AM
+-- Generation Time: Sep 24, 2026 at 10:39 AM
 -- Server version: 11.4.12-MariaDB
 -- PHP Version: 8.4.25
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `blog`
 --
+CREATE DATABASE IF NOT EXISTS `blog` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE `blog`;
 
 -- --------------------------------------------------------
 
