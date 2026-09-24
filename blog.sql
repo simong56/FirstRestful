@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 24, 2026 at 10:39 AM
+-- Generation Time: Sep 24, 2026 at 11:36 AM
 -- Server version: 11.4.12-MariaDB
 -- PHP Version: 8.4.25
 
@@ -107,7 +107,7 @@ CREATE TABLE `blogpost` (
   `title` varchar(40) DEFAULT NULL,
   `content` text DEFAULT NULL,
   `postTime` datetime DEFAULT current_timestamp(),
-  `updateTime` datetime DEFAULT NULL,
+  `updateTime` datetime DEFAULT current_timestamp(),
   `bloggerId` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -209,7 +209,7 @@ ALTER TABLE `blogpost`
 -- Constraints for table `blogpost`
 --
 ALTER TABLE `blogpost`
-  ADD CONSTRAINT `blogpost_ibfk_1` FOREIGN KEY (`bloggerId`) REFERENCES `blogger` (`id`);
+  ADD CONSTRAINT `blogpost_ibfk_1` FOREIGN KEY (`bloggerId`) REFERENCES `blogger` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

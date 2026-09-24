@@ -266,7 +266,7 @@ namespace BlogApi.Controllers
         {
             var connector = new MySqlConnection(ConnectionString);
             connector.Open();
-            string sql = @"SELECT * FROM `blogger` where `id` = @id";
+            string sql = @"SELECT * FROM `blogpost` where `id` = @id";
             var cmd = new MySqlCommand(sql, connector);
             cmd.Parameters.AddWithValue("@id", id);
             var reader = cmd.ExecuteReader();
