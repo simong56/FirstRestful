@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 24, 2026 at 08:58 AM
+-- Generation Time: Sep 24, 2026 at 10:01 AM
 -- Server version: 11.4.12-MariaDB
 -- PHP Version: 8.4.25
 
@@ -104,8 +104,8 @@ CREATE TABLE `blogpost` (
   `id` int(11) NOT NULL,
   `title` varchar(40) DEFAULT NULL,
   `content` text DEFAULT NULL,
-  `postTime` datetime DEFAULT NULL,
-  `updateTime` datetime DEFAULT current_timestamp(),
+  `postTime` datetime DEFAULT current_timestamp(),
+  `updateTime` datetime DEFAULT NULL,
   `bloggerId` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -163,7 +163,8 @@ INSERT INTO `blogpost` (`id`, `title`, `content`, `postTime`, `updateTime`, `blo
 (47, 'Log kezelés és monitorozás', 'Ez a bejegyzés a(z) \"Log kezelés és monitorozás\" témát mutatja be részletesen, gyakorlati példákkal és tanácsokkal a mindennapi munkához.', '2025-07-16 06:34:00', '2025-07-23 10:34:00', 4),
 (48, 'Automatizált tesztelési stratégiák', 'Ez a bejegyzés a(z) \"Automatizált tesztelési stratégiák\" témát mutatja be részletesen, gyakorlati példákkal és tanácsokkal a mindennapi munkához.', '2025-07-07 08:29:00', '2025-07-10 10:29:00', 4),
 (49, 'Szoftverfejlesztési életciklus', 'Ez a bejegyzés a(z) \"Szoftverfejlesztési életciklus\" témát mutatja be részletesen, gyakorlati példákkal és tanácsokkal a mindennapi munkához.', '2026-07-18 03:03:00', '2026-07-28 20:03:00', 1),
-(50, 'Felhasználói élmény és fejlesztés', 'Ez a bejegyzés a(z) \"Felhasználói élmény és fejlesztés\" témát mutatja be részletesen, gyakorlati példákkal és tanácsokkal a mindennapi munkához.', '2025-04-06 07:10:00', '2025-04-12 22:10:00', 4);
+(50, 'Felhasználói élmény és fejlesztés', 'Ez a bejegyzés a(z) \"Felhasználói élmény és fejlesztés\" témát mutatja be részletesen, gyakorlati példákkal és tanácsokkal a mindennapi munkához.', '2025-04-06 07:10:00', '2025-04-12 22:10:00', 4),
+(51, 'Test', 'TestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTest', '2026-09-09 09:59:25', '2026-09-24 09:43:46', 3);
 
 --
 -- Indexes for dumped tables
@@ -196,7 +197,7 @@ ALTER TABLE `blogger`
 -- AUTO_INCREMENT for table `blogpost`
 --
 ALTER TABLE `blogpost`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 
 --
 -- Constraints for dumped tables
